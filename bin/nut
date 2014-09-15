@@ -1,0 +1,54 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'commander/import'
+require 'cocosnut'
+
+program :version, Cocosnut::VERSION
+program :description, Cocosnut::DESCRIPTION
+ 
+# command :init do |c|
+#   c.syntax = 'nut init [options]'
+#   c.summary = ''
+#   c.description = ''
+#   c.example 'description', 'command example'
+#   c.option '--some-switch', 'Some switch that does something'
+#   c.action do |args, options|
+#     # Do something or c.when_called Cocosnut::Commands::Init
+#   end
+# end
+#
+# command :install do |c|
+#   c.syntax = 'nut install [options]'
+#   c.summary = ''
+#   c.description = ''
+#   c.example 'description', 'command example'
+#   c.option '--some-switch', 'Some switch that does something'
+#   c.action do |args, options|
+#     # Do something or c.when_called Cocosnut::Commands::Install
+#   end
+# end
+#
+# command :uninstall do |c|
+#   c.syntax = 'nut uninstall [options]'
+#   c.summary = ''
+#   c.description = ''
+#   c.example 'description', 'command example'
+#   c.option '--some-switch', 'Some switch that does something'
+#   c.action do |args, options|
+#     # Do something or c.when_called Cocosnut::Commands::Uninstall
+#   end
+# end
+
+command :apply do |c|
+  c.syntax = 'nut apply [options]'
+  c.summary = ''
+  c.description = ''
+  c.example 'description', 'command example'
+  c.option '--some-switch', 'Some switch that does something'
+  c.action do |args, options|
+    # Do something or c.when_called Cocosnut::Commands::Apply
+  end
+end
+
+default_command :help
